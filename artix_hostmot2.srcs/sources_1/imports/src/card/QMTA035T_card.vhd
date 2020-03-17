@@ -66,9 +66,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --     ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 --     POSSIBILITY OF SUCH DAMAGE.
 -- 
-
 use work.IDROMConst.all;
-package alchitry_au_card is
+package QMTA035T_card is
 		constant ClockHigh: integer := ClockHigh90;
 		constant ClockMed: integer := ClockMed90;
 		constant ClockLow: integer := ClockLow90;
@@ -76,11 +75,11 @@ package alchitry_au_card is
 		constant BoardNameHigh : std_Logic_Vector(31 downto 0) := BoardNameXXAU;
 		constant FPGASize: integer := 35;
 		constant FPGAPins: integer := 256;
-		constant IOPorts: integer := 3;
+		constant IOPorts: integer := 4;
 		constant IOWidth: integer := 96;
-		constant PortWidth: integer := 32;
+		constant PortWidth: integer := 24;
 		constant LIOWidth: integer := 6;
-		constant LEDCount: integer := 8;
+		constant LEDCount: integer := 2;
 		constant	SepClocks: boolean := true;
 		constant OneWS: boolean := false;
-end package alchitry_au_card;
+end package QMTA035T_card;
