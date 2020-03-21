@@ -71,15 +71,15 @@ package QMTA035T_card is
 		constant ClockHigh: integer := ClockHigh90;
 		constant ClockMed: integer := ClockMed90;
 		constant ClockLow: integer := ClockLow90;
-		constant BoardNameLow : std_Logic_Vector(31 downto 0) := BoardNameALCH;
-		constant BoardNameHigh : std_Logic_Vector(31 downto 0) := BoardNameXXAU;
+		constant BoardNameLow : std_Logic_Vector(31 downto 0) := BoardNameQMTA;
+		constant BoardNameHigh : std_Logic_Vector(31 downto 0) := BoardName035T;
 		constant FPGASize: integer := 35;
 		constant FPGAPins: integer := 256;
 		constant IOPorts: integer := 4;
 		constant IOWidth: integer := 96;
 		constant PortWidth: integer := 24;
 		constant LIOWidth: integer := 6;
-		constant LEDCount: integer := 2;
+		constant LEDCount: integer := 0;
 		constant	SepClocks: boolean := true;
 		constant OneWS: boolean := false;
 end package QMTA035T_card;
