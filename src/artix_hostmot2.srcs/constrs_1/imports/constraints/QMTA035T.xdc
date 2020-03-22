@@ -32,16 +32,6 @@ set_property IOSTANDARD LVTTL [get_ports {LEDS[0]}]
 set_property DRIVE 8 [get_ports {LEDS[0]}]
 set_property SLEW SLOW [get_ports {LEDS[0]}]
 
-#set_property PACKAGE_PIN P15 [get_ports {LEDS[1]}]
-#set_property IOSTANDARD LVTTL [get_ports {LEDS[1]}]
-#set_property DRIVE 8 [get_ports {LEDS[1]}]
-#set_property SLEW SLOW [get_ports {LEDS[1]}]
-
-#set_property PACKAGE_PIN P16 [get_ports {LEDS[2]}]
-#set_property IOSTANDARD LVTTL [get_ports {LEDS[2]}]
-#set_property DRIVE 8 [get_ports {LEDS[2]}]
-#set_property SLEW SLOW [get_ports {LEDS[2]}]
-
 set_property PACKAGE_PIN K5 [get_ports RST_N]
 set_property IOSTANDARD LVTTL [get_ports RST_N]
 
@@ -51,14 +41,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {ADC_MUXP[0]}]
 set_property PACKAGE_PIN A7 [get_ports {ADC_MUXP[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {ADC_MUXP[1]}]
 
-#set_property PACKAGE_PIN B6 [get_ports {ADC_MUXP[2]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {ADC_MUXP[2]}]
-
-#set_property PACKAGE_PIN B5 [get_ports {ADC_MUXP[3]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {ADC_MUXP[3]}]
-
-#set_property PACKAGE_PIN h8 [get_ports AVP]
-#set_property PACKAGE_PIN j7 [get_ports AVN]
+#set_property PACKAGE_PIN b6 [get_ports AVP]
+#set_property PACKAGE_PIN b5 [get_ports AVN]
 
 set_property PACKAGE_PIN r15 [get_ports {IOBITS[0]}]
 set_property IOSTANDARD LVTTL [get_ports {IOBITS[0]}]
