@@ -81,9 +81,9 @@ use work.FixICap.all;
 -------------------- select one card type------------------------------
 use work.QMTA035T_card.all;
 -----------------------------------------------------------------------
-use work.PIN_TEST2_96.all;
+--use work.PIN_TEST2_96.all;
 --use work.PIN_JUSTIO_96.all;
---use work.PIN_DUEX5_96.all;
+use work.PIN_DUEX5_96.all;
 ----------------------------------------------------------------------
 	
 	
