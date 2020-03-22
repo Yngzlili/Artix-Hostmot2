@@ -81,8 +81,8 @@ use work.FixICap.all;
 -------------------- select one card type------------------------------
 use work.QMTA035T_card.all;
 -----------------------------------------------------------------------
---use work.PIN_TEST2_96.all;
-use work.PIN_JUSTIO_96.all;
+use work.PIN_TEST2_96.all;
+--use work.PIN_JUSTIO_96.all;
 --use work.PIN_DUEX5_96.all;
 ----------------------------------------------------------------------
 	
@@ -117,9 +117,9 @@ entity tophm2 is -- for alchitry au spi
 				COM_SPIIN : in std_logic;
 				COM_SPIOUT : out std_logic;
 				COM_SPICS : in std_logic;
--- signals unique to alchitry au fpga --
-				USB_RX: in std_logic;
-				USB_TX: out std_logic;
+-- signals unique to QMTA035T Board --
+--				USB_RX: in std_logic;
+--				USB_TX: out std_logic;
 				RST_N : in  std_logic;                    -- reset button on board (inverted)
 -- signals for adc
 				ADC_MUXP: out std_logic_vector(1 downto 0); 
