@@ -8,45 +8,54 @@ set_property CFGBVS VCCO [current_design]
 set_property CONFIG_VOLTAGE 3.3 [current_design]
 
 create_clock -period 10.000 -name CLK -waveform {0.000 5.000} [get_ports CLK]
-create_clock -name COM_SPICLK -period 50.000 [get_ports COM_SPICLK]
+create_clock -name COM_SPICLK -period 100.000 [get_ports COM_SPICLK]
 
 set_property PACKAGE_PIN n11 [get_ports CLK]
 set_property IOSTANDARD LVTTL [get_ports CLK]
 
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets COM_SPICLK_IBUF]
 set_property PACKAGE_PIN n13 [get_ports COM_SPICLK]
 set_property IOSTANDARD LVTTL [get_ports COM_SPICLK]
 
-set_property PACKAGE_PIN n14 [get_ports COM_SPICS]
+set_property PACKAGE_PIN m12 [get_ports COM_SPICS]
 set_property IOSTANDARD LVTTL [get_ports COM_SPICS]
 
 set_property PACKAGE_PIN n16 [get_ports COM_SPIIN]
 set_property IOSTANDARD LVTTL [get_ports COM_SPIIN]
 
-set_property PACKAGE_PIN m12 [get_ports COM_SPIOUT]
+set_property PACKAGE_PIN n14 [get_ports COM_SPIOUT]
 set_property IOSTANDARD LVTTL [get_ports COM_SPIOUT]
 set_property DRIVE 4 [get_ports COM_SPIOUT]
 set_property SLEW FAST [get_ports COM_SPIOUT]
-
-#set_property PACKAGE_PIN P6 [get_ports RST_N]
-#set_property IOSTANDARD LVTTL [get_ports RST_N]
 
 set_property PACKAGE_PIN E6 [get_ports {LEDS[0]}]
 set_property IOSTANDARD LVTTL [get_ports {LEDS[0]}]
 set_property DRIVE 8 [get_ports {LEDS[0]}]
 set_property SLEW SLOW [get_ports {LEDS[0]}]
 
-#set_property PACKAGE_PIN p16 [get_ports {USB_TX}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {USB_TX}]
+#set_property PACKAGE_PIN P15 [get_ports {LEDS[1]}]
+#set_property IOSTANDARD LVTTL [get_ports {LEDS[1]}]
+#set_property DRIVE 8 [get_ports {LEDS[1]}]
+#set_property SLEW SLOW [get_ports {LEDS[1]}]
 
-#set_property PACKAGE_PIN p15 [get_ports {USB_RX}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {USB_RX}]
+#set_property PACKAGE_PIN P16 [get_ports {LEDS[2]}]
+#set_property IOSTANDARD LVTTL [get_ports {LEDS[2]}]
+#set_property DRIVE 8 [get_ports {LEDS[2]}]
+#set_property SLEW SLOW [get_ports {LEDS[2]}]
 
-set_property PACKAGE_PIN b7 [get_ports {ADC_MUXP[0]}]
+set_property PACKAGE_PIN K5 [get_ports RST_N]
+set_property IOSTANDARD LVTTL [get_ports RST_N]
+
+set_property PACKAGE_PIN B7 [get_ports {ADC_MUXP[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {ADC_MUXP[0]}]
 
-set_property PACKAGE_PIN a7 [get_ports {ADC_MUXP[1]}]
+set_property PACKAGE_PIN A7 [get_ports {ADC_MUXP[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {ADC_MUXP[1]}]
+
+#set_property PACKAGE_PIN B6 [get_ports {ADC_MUXP[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {ADC_MUXP[2]}]
+
+#set_property PACKAGE_PIN B5 [get_ports {ADC_MUXP[3]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {ADC_MUXP[3]}]
 
 #set_property PACKAGE_PIN h8 [get_ports AVP]
 #set_property PACKAGE_PIN j7 [get_ports AVN]
