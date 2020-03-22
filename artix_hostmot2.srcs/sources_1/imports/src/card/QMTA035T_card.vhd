@@ -79,7 +79,7 @@ package QMTA035T_card is
 		constant IOWidth: integer := 96;
 		constant PortWidth: integer := 24;
 		constant LIOWidth: integer := 6;
-		constant LEDCount: integer := 0;
+		constant LEDCount: integer := 1;
 		constant	SepClocks: boolean := true;
 		constant OneWS: boolean := false;
 end package QMTA035T_card;
