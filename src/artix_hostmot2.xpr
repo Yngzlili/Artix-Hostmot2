@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/Younes/Desktop/you/artix_hostmot2.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/Younes/Desktop/src/artix_hostmot2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="df1eeb55cf1d413e826d08d5718f7413"/>
@@ -909,6 +909,12 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/src/common/inmuxm.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/pin/PIN_DUEX5_96.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
